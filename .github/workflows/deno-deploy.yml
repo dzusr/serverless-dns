@@ -45,7 +45,7 @@ on:
 
 env:
   DEPLOY_MODE: 'action'
-  PROJECT_NAME: ${{ secrets.DENO_PROJECT_NAME || 'serverless.koree.cf' }}
+  PROJECT_NAME: ${{ secrets.DENO_PROJECT_NAME || 'rdns' }}
   BUILD_BRANCH: >
     ${{ github.event_name == 'workflow_dispatch' &&
       github.event.inputs.deployment-type == 'live' &&
